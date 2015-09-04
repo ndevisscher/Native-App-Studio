@@ -13,11 +13,6 @@ public class ThirdScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third_screen);
 
-        String BackgroundColor = getIntent().getStringExtra("BackgroundColor");
-        TextView txtDisplay = (TextView)findViewById(R.id.BackgroundCh);
-        txtDisplay.setText("kleurkeuze " +txtDisplay);
-
-
     }
 
     @Override
