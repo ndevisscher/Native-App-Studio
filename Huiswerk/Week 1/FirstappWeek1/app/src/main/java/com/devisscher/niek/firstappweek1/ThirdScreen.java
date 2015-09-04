@@ -13,6 +13,10 @@ public class ThirdScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third_screen);
 
+        String ColorChoice = getIntent().getStringExtra("ColorChoice");
+        TextView txtDisplay = (TextView)findViewById(R.id.choice);
+        txtDisplay.setText("Je koos: " + ColorChoice);
+
     }
 
     @Override

@@ -32,8 +32,8 @@ public class SecondScreen extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SecondScreen.this, ThirdScreen.class);
-                String ColorChoice = "#FF0000";
-                intent.putExtra("BackgroundColor", ColorChoice);
+                String ColorChoice = "rood";
+                intent.putExtra("ColorChoice", ColorChoice);
                 startActivity(intent);
             }
         });
@@ -42,8 +42,8 @@ public class SecondScreen extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SecondScreen.this, ThirdScreen.class);
-                String ColorChoice = "#0000FF";
-                intent.putExtra("BackgroundColor", ColorChoice);
+                String ColorChoice = "blauw";
+                intent.putExtra("colorChoice", ColorChoice);
                 startActivity(intent);
             }
         });
@@ -52,8 +52,8 @@ public class SecondScreen extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SecondScreen.this, ThirdScreen.class);
-                String ColorChoice = "#00FF00";
-                intent.putExtra("BackgroundColor", ColorChoice);
+                String ColorChoice = "groen";
+                intent.putExtra("ColorChoice", ColorChoice);
                 startActivity(intent);
             }
         });
