@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:text="Ga door"
         android:id="@+id/button"
+        android:onClick="sendName"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="44dp" />
@@ -44,45 +45,5 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#FF0000"
-        android:id="@+id/redbutton"
-        android:onClick="sendred"
-        android:layout_above="@+id/button"
-        android:layout_alignLeft="@+id/AskName"
-        android:layout_alignStart="@+id/AskName"
-        android:layout_toLeftOf="@+id/button"
-        android:layout_toStartOf="@+id/button" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/bluebutton"
-        android:background="#0000FF"
-        android:onClick="sendblue"
-        android:layout_alignTop="@+id/redbutton"
-        android:layout_centerHorizontal="true"
-        android:clickable="false" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/greenbutton"
-        android:background="#00FF00"
-        android:onClick="sendgreen"
-        android:layout_above="@+id/button"
-        android:layout_toRightOf="@+id/button"
-        android:layout_toEndOf="@+id/button" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Kies een kleur:"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/NameInput"
-        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

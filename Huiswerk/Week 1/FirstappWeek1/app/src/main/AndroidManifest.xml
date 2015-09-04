@@ -12,7 +12,6 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -21,8 +20,16 @@
             android:label="@string/title_activity_second_screen"
             android:parentActivityName=".WelcomeScreen" >
             <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
+                android:name="android.secondscreen"
                 android:value="com.devisscher.niek.firstappweek1.WelcomeScreen" />
+        </activity>
+        <activity
+            android:name=".ThirdScreen"
+            android:label="@string/title_activity_third_screen"
+            android:parentActivityName=".SecondScreen" >
+            <meta-data
+                android:name="android.thirdscreen"
+                android:value="com.devisscher.niek.firstappweek1.SecondScreen" />
         </activity>
     </application>
 

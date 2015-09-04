@@ -10,9 +10,61 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="De gekozen kleur is nu je achtergrondkleur."
-        android:id="@+id/textView"
+        android:text="Welkom bij deze fantastische App:"
+        android:id="@+id/SecondWelcome"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp" />
+        android:layout_marginTop="58dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:id="@+id/redbutton"
+        android:onClick="sendred"
+        android:layout_alignTop="@+id/greenbutton"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bluebutton"
+        android:background="#0000FF"
+        android:onClick="sendblue"
+        android:clickable="false"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginTop="55dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/greenbutton"
+        android:background="#00FF00"
+        android:onClick="sendgreen"
+        android:layout_alignTop="@+id/bluebutton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Kies een kleur:"
+        android:id="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/NameImport"
+        android:layout_marginTop="25dp"
+        android:textColor="#FF0000"
+        android:layout_below="@+id/SecondWelcome"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
