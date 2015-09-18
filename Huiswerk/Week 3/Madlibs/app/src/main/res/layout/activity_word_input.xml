@@ -16,32 +16,21 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="X"
-        android:id="@+id/inputField"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="96dp"
-        android:layout_toLeftOf="@+id/Input"
-        android:layout_toStartOf="@+id/Input" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ok"
         android:id="@+id/Input"
-        android:layout_alignBottom="@+id/inputField"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/wordsLeft"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginTop="75dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="X words left"
+        android:text=""
         android:id="@+id/wordsLeft"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true" />
@@ -52,7 +41,17 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Please type a/an X"
         android:id="@+id/helper"
-        android:layout_below="@+id/inputField"
-        android:layout_alignRight="@+id/wordsLeft"
-        android:layout_alignEnd="@+id/wordsLeft" />
+        android:layout_below="@+id/Input"
+        android:layout_alignLeft="@+id/wordsLeft"
+        android:layout_alignStart="@+id/wordsLeft" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignBottom="@+id/Input"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/Input"
+        android:layout_toStartOf="@+id/Input" />
 </RelativeLayout>

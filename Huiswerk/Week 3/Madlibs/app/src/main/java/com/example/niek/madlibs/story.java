@@ -3,10 +3,13 @@ package com.example.niek.madlibs;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import java.io.InputStream;
 import java.io.Serializable;
@@ -16,10 +19,18 @@ import java.util.Scanner;
 
 public class story extends Activity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_story);
+
+        Intent intent = getIntent();
+        String Text = intent.getStringExtra("Passed Text");
+
+        TextView output = (TextView)findViewById(R.id.storyOutput);
+        output.setText(Text);
 
         Button button = (Button)findViewById(R.id.newStory);
         button.setOnClickListener(new View.OnClickListener() {
