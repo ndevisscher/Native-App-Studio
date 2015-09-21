@@ -6,13 +6,14 @@
 This project is going to be a fully working App for the Ghost game
 
 ### Features: ###
-* Name input
-* Playing the game
+* Name input/Name selection for every player
+* Playing the game 
 * Checking high scores
-* letter input
+* letter input while ingame
 * turn indicator
-* multiple dictionaries
-* menu
+* multiple dictionaries for playing the game
+* menu pop-up for setting selections
 * language selection
 * game restart
+* input validation while ingame
 
