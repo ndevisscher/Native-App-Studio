@@ -17,3 +17,4 @@ This project is going to be a fully working App for the Ghost game
 * game restart
 * input validation while ingame
 
+![alt text](https://github.com/ndevisscher/Native-App-Studio/blob/master/Project/1.JPG "Ghost")
