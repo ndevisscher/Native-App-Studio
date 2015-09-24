@@ -38,8 +38,9 @@ public class MainActivity extends Activity {
             public boolean onItemLongClick(AdapterView<?> arg0, View v, int index, long arg3) {
 
                 Log.v("long clicked", "pos: " + index);
-                ListAdapter.remove([index]);
-                ArrayAdapter.notifyDataSetChanged();
+                String remove = listAdapter.getItem(index);
+                listAdapter.remove(remove);
+                listAdapter.notifyDataSetChanged();
                 return false;
             }
         });
